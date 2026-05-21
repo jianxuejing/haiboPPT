@@ -1,0 +1,548 @@
+/* Project manager core capability training deck.
+   Scoped additions on top of html-ppt base.css and corporate-clean theme. */
+
+:root {
+  --letter-tight: 0;
+  --letter-normal: 0;
+}
+
+.tpl-pm-training .slide {
+  padding: 66px 86px 58px;
+  letter-spacing: 0;
+}
+
+.tpl-pm-training .kicker {
+  font-family: var(--font-mono, monospace);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  margin: 0 0 14px;
+  color: var(--accent-2);
+}
+
+.tpl-pm-training .h1,
+.tpl-pm-training .h2,
+.tpl-pm-training h1,
+.tpl-pm-training h2,
+.tpl-pm-training h3,
+.tpl-pm-training h4 {
+  letter-spacing: 0;
+}
+
+.tpl-pm-training .h1 {
+  font-size: 68px;
+  line-height: 1.08;
+  margin: 0 0 20px;
+}
+
+.tpl-pm-training .h2 {
+  font-size: 46px;
+  line-height: 1.16;
+  margin: 0 0 20px;
+}
+
+.tpl-pm-training .h3 {
+  font-size: 28px;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+.tpl-pm-training .lede {
+  font-size: 21px;
+  line-height: 1.55;
+  max-width: 760px;
+}
+
+.tpl-pm-training .deck-footer {
+  left: 42px;
+  right: 42px;
+  bottom: 22px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.tpl-pm-training .accent {
+  color: var(--accent-2);
+  font-weight: 720;
+}
+
+.tpl-pm-training .muted {
+  color: var(--text-3);
+}
+
+.tpl-pm-training .tagline {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: var(--text-2);
+  background: var(--surface-2);
+  font-size: 14px;
+}
+
+.tpl-pm-training .meta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.tpl-pm-training .meta {
+  border-left: 3px solid var(--accent-2);
+  padding-left: 14px;
+  min-width: 190px;
+}
+
+.tpl-pm-training .meta b {
+  display: block;
+  font-size: 18px;
+  color: var(--text-1);
+}
+
+.tpl-pm-training .meta span {
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.tpl-pm-training .panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 22px 24px;
+  box-shadow: var(--shadow);
+}
+
+.tpl-pm-training .panel.soft {
+  background: var(--surface-2);
+  box-shadow: none;
+}
+
+.tpl-pm-training .panel h3,
+.tpl-pm-training .panel h4 {
+  margin: 0 0 10px;
+  font-size: 21px;
+}
+
+.tpl-pm-training .panel p {
+  margin: 0;
+  color: var(--text-2);
+}
+
+.tpl-pm-training .grid {
+  display: grid;
+  gap: 18px;
+}
+
+.tpl-pm-training .g2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tpl-pm-training .g3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tpl-pm-training .g4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.tpl-pm-training .g5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.tpl-pm-training .agenda {
+  margin-top: 24px;
+}
+
+.tpl-pm-training .agenda-row {
+  display: grid;
+  grid-template-columns: 52px 1fr 88px;
+  gap: 16px;
+  align-items: center;
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tpl-pm-training .agenda-row:last-child {
+  border-bottom: 0;
+}
+
+.tpl-pm-training .num {
+  font-family: var(--font-mono, monospace);
+  font-weight: 760;
+  color: var(--accent-2);
+}
+
+.tpl-pm-training .agenda-row .title {
+  font-size: 18px;
+  font-weight: 680;
+}
+
+.tpl-pm-training .agenda-row .time {
+  font-family: var(--font-mono, monospace);
+  color: var(--text-3);
+  font-size: 12px;
+  text-align: right;
+}
+
+.tpl-pm-training .big-statement {
+  font-size: 39px;
+  line-height: 1.25;
+  font-weight: 760;
+  max-width: 920px;
+}
+
+.tpl-pm-training .split {
+  display: grid;
+  grid-template-columns: 1.03fr 0.97fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.tpl-pm-training .list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tpl-pm-training .list li {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 10px;
+  align-items: start;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.tpl-pm-training .list li::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background: var(--accent-2);
+}
+
+.tpl-pm-training .matrix {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.tpl-pm-training .matrix .cell {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 12px;
+  min-height: 112px;
+  background: var(--surface);
+}
+
+.tpl-pm-training .matrix .cell b {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.tpl-pm-training .matrix .cell span {
+  display: block;
+  color: var(--text-2);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.tpl-pm-training .timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.tpl-pm-training .stage {
+  border-top: 4px solid var(--accent-2);
+  background: var(--surface);
+  border-radius: 8px;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 14px;
+  min-height: 190px;
+}
+
+.tpl-pm-training .stage b {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.tpl-pm-training .stage span {
+  display: block;
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tpl-pm-training .raci {
+  display: grid;
+  grid-template-columns: 132px repeat(4, 1fr);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tpl-pm-training .raci div {
+  padding: 13px 12px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  min-height: 48px;
+}
+
+.tpl-pm-training .raci div:nth-child(5n) {
+  border-right: 0;
+}
+
+.tpl-pm-training .raci .head {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.tpl-pm-training .raci .label {
+  background: var(--surface-2);
+  font-weight: 700;
+}
+
+.tpl-pm-training .checklist {
+  counter-reset: item;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.tpl-pm-training .check {
+  counter-increment: item;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: start;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--surface);
+}
+
+.tpl-pm-training .check::before {
+  content: counter(item, decimal-leading-zero);
+  font-family: var(--font-mono, monospace);
+  color: var(--accent-2);
+  font-weight: 800;
+}
+
+.tpl-pm-training .check b {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.tpl-pm-training .check span {
+  color: var(--text-2);
+  font-size: 15px;
+}
+
+.tpl-pm-training .quote {
+  border-left: 6px solid var(--accent-2);
+  padding-left: 24px;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 720;
+  max-width: 880px;
+}
+
+.tpl-pm-training .case-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.tpl-pm-training .case-card {
+  min-height: 170px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px;
+  background: var(--surface);
+}
+
+.tpl-pm-training .case-card b {
+  display: block;
+  font-family: var(--font-mono, monospace);
+  color: var(--accent-2);
+  margin-bottom: 12px;
+}
+
+.tpl-pm-training .case-card span {
+  display: block;
+  font-size: 18px;
+  line-height: 1.42;
+}
+
+.tpl-pm-training .footer-hint {
+  position: fixed;
+  left: 14px;
+  bottom: 10px;
+  z-index: 100;
+  pointer-events: none;
+  font-size: 10px;
+  color: color-mix(in srgb, var(--text-3) 72%, transparent);
+}
+
+@media (max-width: 900px) {
+  .tpl-pm-training .slide {
+    padding: 28px 24px 42px;
+  }
+
+  .tpl-pm-training .h1 {
+    font-size: 38px;
+  }
+
+  .tpl-pm-training .h2 {
+    font-size: 29px;
+    margin-bottom: 12px;
+  }
+
+  .tpl-pm-training .h3 {
+    font-size: 19px;
+  }
+
+  .tpl-pm-training .lede {
+    font-size: 16px;
+  }
+
+  .tpl-pm-training .grid {
+    gap: 10px;
+  }
+
+  .tpl-pm-training .panel {
+    padding: 12px 14px;
+  }
+
+  .tpl-pm-training .panel h3,
+  .tpl-pm-training .panel h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .tpl-pm-training .panel p,
+  .tpl-pm-training .stage span,
+  .tpl-pm-training .matrix .cell span {
+    font-size: 12px;
+    line-height: 1.38;
+  }
+
+  .tpl-pm-training .list {
+    gap: 5px;
+  }
+
+  .tpl-pm-training .list li {
+    grid-template-columns: 14px 1fr;
+    gap: 6px;
+    font-size: 13px;
+    line-height: 1.32;
+  }
+
+  .tpl-pm-training .list li::before {
+    width: 6px;
+    height: 6px;
+    margin-top: 7px;
+  }
+
+  .tpl-pm-training .split,
+  .tpl-pm-training .g2 {
+    grid-template-columns: 1fr;
+  }
+
+  .tpl-pm-training .g3,
+  .tpl-pm-training .g4,
+  .tpl-pm-training .g5,
+  .tpl-pm-training .timeline,
+  .tpl-pm-training .case-grid,
+  .tpl-pm-training .matrix,
+  .tpl-pm-training .checklist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tpl-pm-training .agenda-row {
+    grid-template-columns: 42px 1fr;
+    padding: 8px 10px;
+  }
+
+  .tpl-pm-training .agenda-row .title {
+    font-size: 14px;
+  }
+
+  .tpl-pm-training .agenda-row .time {
+    display: none;
+  }
+
+  .tpl-pm-training .matrix {
+    margin-top: 16px;
+  }
+
+  .tpl-pm-training .matrix .cell {
+    min-height: 72px;
+    padding: 10px;
+  }
+
+  .tpl-pm-training .matrix .cell b,
+  .tpl-pm-training .stage b,
+  .tpl-pm-training .case-card span {
+    font-size: 15px;
+  }
+
+  .tpl-pm-training .timeline {
+    margin-top: 16px;
+  }
+
+  .tpl-pm-training .stage {
+    min-height: 112px;
+    padding: 10px;
+  }
+
+  .tpl-pm-training .quote {
+    font-size: 23px;
+    padding-left: 14px;
+  }
+
+  .tpl-pm-training .check {
+    grid-template-columns: 34px 1fr;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .tpl-pm-training .check span {
+    font-size: 12px;
+  }
+
+  .tpl-pm-training .case-card {
+    min-height: 95px;
+    padding: 12px;
+  }
+
+  .tpl-pm-training .case-card b {
+    margin-bottom: 5px;
+  }
+
+  .tpl-pm-training .mt-l {
+    margin-top: 16px;
+  }
+
+  .tpl-pm-training .deck-footer {
+    left: 22px;
+    right: 22px;
+    bottom: 14px;
+  }
+
+  .tpl-pm-training .footer-hint {
+    display: none;
+  }
+}
